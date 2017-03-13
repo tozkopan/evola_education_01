@@ -1,0 +1,17 @@
+<mvc:View controllerName="edu.v01education_01.controller.Sub" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App backgroundColor="pink">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Button text="{i18n>helloSimple}" press="onPressA" icon="sap-icon://begin"/>
+					<List id="myList" items="{/letters}" mode="Delete" delete="onDelete">
+						<items>
+							<DisplayListItem label="{}" type="Active"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
