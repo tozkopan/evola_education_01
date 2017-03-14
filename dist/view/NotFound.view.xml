@@ -1,0 +1,8 @@
+<mvc:View controllerName="edu.v01education_01.controller.Sub" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" displayBlock="true" xmlns="sap.m">
+	<Page title="{i18n>title}">
+		<content>
+			<Text text="Shroedinger's mood"/>
+			<Button text="Go back" press="navBack"/>
+		</content>
+	</Page>
+</mvc:View>

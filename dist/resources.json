@@ -20,7 +20,19 @@
             "name": "css/style.css"
         },
         {
+            "name": "frag/firstFrag.fragment.xml"
+        },
+        {
+            "name": "frag/secondFrag.fragment.xml"
+        },
+        {
+            "name": "view/NotFound.view.xml"
+        },
+        {
             "name": "view/Main.view.xml"
+        },
+        {
+            "name": "view/App.view.xml"
         },
         {
             "name": "controller/Main.controller.js"

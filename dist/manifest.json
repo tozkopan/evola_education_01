@@ -36,7 +36,7 @@
     },
     "sap.ui5": {
         "rootView": {
-            "viewName": "edu.v01education_01.view.Main",
+            "viewName": "edu.v01education_01.view.App",
             "type": "XML"
         },
         "dependencies": {
@@ -61,6 +61,44 @@
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
                     "bundleName": "edu.v01education_01.i18n.i18n"
+                }
+            },
+            "util": {
+                "type": "sap.ui.model.json.JSONModel"
+            }
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "edu.v01education_01.view",
+                "controlId": "app",
+                "controlAggregation": "pages",
+                "bypassed": {
+                    "target": "notFound"
+                },
+                "async": true
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "Default",
+                    "target": "default"
+                },
+                {
+                    "pattern": "Mood/{isGood}",
+                    "name": "Mood",
+                    "target": "default"
+                }
+            ],
+            "targets": {
+                "default": {
+                    "viewName": "Main",
+                    "viewLevel": 1
+                },
+                "notFound": {
+                    "viewName": "NotFound",
+                    "viewLevel": 2
                 }
             }
         },
